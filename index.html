@@ -4,42 +4,25 @@
         <meta charset='utf8'>
     </head>
     <body>
-        Hello
+        Game
         <div id='ruffle'></div>
-        <script src='https://e9x.github.io/ruffle-example/ruffle.js'></script>
+        <script src='https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=600&container=enterprise/https://sites.google.com/site/s019i5h/ruffle.js'></script>
         <script>
 var swfobject = {};
 
 swfobject.embedSWF = function(url, cont, width, height){
     var ruffle = window.RufflePlayer.newest(),
         player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            width: width,
-            height: height,
+            width: 1000,
+            height: 800,
             style: 'width: ' + width + 'px; height: ' + height + 'px',
         });
     
     player.load({ url: url });
 }
 
-swfobject.embedSWF('https://github.com/7897-E/Bloons-td5/blob/main/610995_btd5.swf', 'ruffle', 500, 500);
+swfobject.embedSWF('https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=600&container=enterprise/https://uploads.ungrounded.net/610000/610995_btd5.swf', 'ruffle', 850, 600);
         </script>
-        <div id="container"> </div>
-
-<script src="ruffle/ruffle.js"></script>
-    <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.addEventListener("load", (event) => {
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            const container = document.getElementById("container"); 
-            container.appendChild(player);
-            player.load({
-                url: "mig29.swf", 
-                backgroundColor: "#000", 
-             });
-            player.style.width = "450px"; 
-            player.style.height = "450px";
-        });
-    </script>
     </body>
 </html>
+
